@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScripts</title>
+</head>
+<body>
+    Viết chương trình đếm và in ra số lượng các số nguyên chia hết cho 3 hoặc 7 nằm trong đoạn 1 đến 100. 
+    <br>
+    <script>
+        var count;
+        count = 0;
+        for( var i=0; i<100; i++){
+            if(i%3==0 | i%7==0)
+            count++;
+        }
+        document.write("Số lượng các số nguyên chia hết cho 3 hoặc chia hết cho 7 là: ", + count);
+    </script>
+</body>
+</html>

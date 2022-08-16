@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScripts</title>
+</head>
+<body>
+    Viết chương trình nhập vào 3 số M, N, K từ bàn phím. Tính tổng các số chia hết cho k trong khoảng từ N đến M. 
+    <br>
+    <p>Lưu ý: Trong khoảng N đến M. (N<=M) </p>
+    <br>
+    <script>
+        var n,m,k;
+        do{
+            n = prompt("nhap n");
+            m = prompt("nhap m");
+            k = prompt("nhap k");
+        }while(m<n)
+        var sum= 0;
+        for(;n<=m;n++){
+            if(n%k==0){
+                sum+=n;
+            }
+        }
+        document.write("tổng các số chia hết cho k trong khoảng từ M đến N là:",sum);
+    </script>
+</body>
+</html>
